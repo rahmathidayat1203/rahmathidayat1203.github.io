@@ -1,136 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Portfolio</title>
-	<!-- css files -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-	<meta name="author" content="Hassan Ali">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahmat Hidayat - Web Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-	<body>
-		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
-				<!-- <a href="http://medium.com/@hassanhelfi/" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-medium"></i>
-					</span>
-				</a> -->
-				<a href="https://github.com/rahmathidayat1203" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>
-				<!-- <a href="https://twitter.com/hassanhelfi" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-twitter"></i>
-					</span>
-				</a>				 -->
-			</div>
 
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#about">About</a>
-				<a class="nav-item" href="#projects">Projects</a>
-				<a class="nav-item" href="#social">Social</a>
-			</div>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <div class="logo">Rahmat <span>Hidayat</span></div>
+            <div class="menu-toggle">☰</div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- end header -->
 
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
-				
-		<!-- About Me -->
-		<section id="about" class="section section-1">
-			<div class="container has-text-centered">
-				<!-- Source: https://flic.kr/p/pAZBNK -->
-				<img class="avatar" src="assets/img/profile.jpg">
-			</div>
-			<div class="container"></br>
-				<p class="intro">
-					Saya merupakan mahasiswa sistem komputer universitas sriwijaya umur saya 23 tahun, saya merupakan web dev programer dan android programer 
-				</p>
-			</div>
-		</section>
-		
-		<!-- Projects -->
-		<section  id="projects" class="section section-2">
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Projects</h3>
-				</div>
-				
-				<div class="columns is-multiline is-desktop">
-					<!-- Project 1 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/project-1.jpg" alt="Image">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										They don’t want us to eat. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
-					<!-- Project 2 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<img src="assets/img/project-2.jpg" alt="Image">
-									</figure>
-								</div>
-								<div>			
-									<p>
-										Bless up. Another one. How’s business? Boomin. Don’t ever play yourself. Life is what you make it, so let’s make it.
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        <!-- main content -->
+        <main class="main-content">
+            <div class="image-content">
+                <img src="/assets/images/my_image.jpg" alt="Rahmat Hidayat profile picture">
+            </div>
+            <div class="text-content">
+                <h1>Hi, It's <span style="color: #00ffcc;">Rahmat</span></h1>
+                <h2>I'm a <span id="typing-text"></span></h2>
+                <p>I am a passionate and versatile Fullstack Android Developer, Web Developer, and IoT Developer with a deep enthusiasm for cutting-edge technology </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="buttons">
+                    <a href="#">Hire</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </main>
+        <!-- end main content -->
 
-		<!-- Social -->
-		<section id="social" class="section section-3">
-			<div class="container">
-				<div class="has-text-centered">					
-					<h3 class="title is-3">Let's Socialize</h3>
-				</div>
-				<div class="social-container columns">
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="https://www.linkedin.com/in/rahmat-hidayat-69561a16b/"><img class="" src="assets/img/linkedin.png"></a>
-					</div>
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="#"><img class="" src="assets/img/facebook.png"></a>
-					</div>
-				</div>
-			</div>
-		</section>	
-		
-		<!-- Footer -->
-		<section class="section-4 has-text-centered container">
-			<a href="#">Rahmat Hidayat</a>
-		</section>
-		
-		<!-- Scripts  -->
-		<script src="controller.js"></script>		
-	</body>	
+        <!-- education section -->
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <span class="date">2021</span>
+                        <h3>High School</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <span class="date">2022</span>
+                        <h3>University</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content">
+                        <span class="date">2023</span>
+                        <h3>Internship</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end education section -->
+
+        <!-- service section -->
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3>UI Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus delectus magnam
+                        sapiente alias voluptatum porro ab aperio, culpa laborum, doloremque adipisci recusanda soluta
+                        labore velit quod quis. Ut, eveniet!</p>
+                </div>
+                <div class="service-card">
+                    <h3>Frontend Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, tempora sed? Recusandae itaque,
+                        quia quos excepturi blanditiis quaerat voluptatum quam? Maiores aut incidunt omnis, delectus
+                        autem vel labore molestias consequatur.</p>
+                </div>
+                <!-- Add more service cards as needed -->
+            </div>
+        </section>
+        <!-- end service section -->
+        <!-- testimonials section -->
+        <section id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="/assets/images/girl1.jpg" alt="Thomas">
+                    </div>
+                    <div class="testimonial-name">Jessica</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                        autem voluptatum quia, dolor sitis amets perferendis cum bona dosis excepeturis magna! Excepturi
+                        a vengiatis corporis perspiciatis inglorious maxed atuem.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="assets/images/man1.jpg" alt="Thomas">
+                    </div>
+                    <div class="testimonial-name">Thomas</div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                        autem voluptatum quia, dolor sitis amets perferendis cum bona dosis excepeturis magna! Excepturi
+                        a vengiatis corporis perspiciatis inglorious maxed atuem.</p>
+                </div>
+                <!-- Add more testimonial cards as needed -->
+            </div>
+        </section>
+        <!--end testimonials section -->
+        <!-- contact section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-form">
+                <h1>Contact <span>Me</span></h1>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </div>
+        </section>
+        <!-- end contact section -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="#" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#">FAQ</a>
+                <a href="#">Services</a>
+                <a href="#">About Me</a>
+                <a href="#">Contact</a>
+                <a href="#">Testimonials</a>
+            </nav>
+
+            <div class="copyright">
+                © Rahmat Hidayat | All Rights Reserved
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
 </html>
