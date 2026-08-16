@@ -1,19 +1,15 @@
 // review.js – Supabase reviews + star rating (sync with CDN)
-// Script ini mengandalkan skrip CDN: supabase-js@2 dari package supabase
-
-const SUPABASE_URL = "https://ggtphjckjvdyjztzzqik.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdndHBoamNranZkeWp6dHp6cWlrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY4OTA1MTAsImV4cCI6MjEwMjQ2NjUxMH0.kpL41mBRdYer8WCIJzhzhzI6IAfUcDdEdjIIA0W2XXE";
-
-// Pastikan instance SupabaseClient tersedia (gunakan global dari CDN, atau buat sendiri)
+// Global Supabase client instance (named supabaseClient) to avoid overwriting the library
 if (!window.supabase) {
-  window.supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  console.error('Supabase CDN script not loaded');
 }
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 /**
  * Load existing reviews from Supabase
  */
 async function loadReviews() {
-  const { data, error } = await supabase
+  const { data, error } = await supabaseClient
     .from('reviews')
     .select('*')
     .order('created_at', { ascending: false });
@@ -48,12 +44,12 @@ async function submitReview(event) {
   const rating = ratingInput ? parseInt(ratingInput.value, 10) : null;
   const comment = form['review-comment']?.value.trim();
 
-  if (!name || !rating || !ratingInput || !comment) {
+  if (!name || !rating || !comment) {
     alert('Harap isi semua bidang');
     return;
   }
 
-  const { error } = await supabase
+  const { error } = await supabaseClient
     .from('reviews')
     .insert({ name, rating, comment });
 
@@ -88,9 +84,7 @@ function initStarRating() {
     star.addEventListener('click', () => {
       const val = parseInt(star.dataset.value, 10);
       ratingInput.value = val;
-      stars.forEach(s => {
-        s.classList.toggle('active', parseInt(s.dataset.value, 10) <= val);
-      });
+      stars.forEach(s => s.classList.toggle('active', parseInt(s.dataset.value, 10) <= val));
     });
   });
 }
