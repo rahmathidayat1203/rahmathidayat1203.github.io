@@ -1,5 +1,8 @@
 // review.js – Supabase reviews + star rating (sync with CDN)
 // Global Supabase client instance (named supabaseClient) to avoid overwriting the library
+const SUPABASE_URL = "https://ggtphjckjvdyjztzzqik.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdndHBoamNranZkeWp6dHp6cWlrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY4OTA1MTAsImV4cCI6MjEwMjQ2NjUxMH0.kpL41mBRdYer8WCIJzhzhzI6IAfUcDdEdjIIA0W2XXE";
+
 if (!window.supabase) {
   console.error('Supabase CDN script not loaded');
 }
