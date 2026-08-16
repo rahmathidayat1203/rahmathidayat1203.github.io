@@ -702,6 +702,31 @@ p {
     transform: translateY(-2px);
 }
 
+/* WhatsApp contact button */
+.contact-wa {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.wa-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 26px;
+    border-radius: 999px;
+    background: #25D366;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wa-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(37, 211, 102, 0.4);
+}
+
 /* Star rating widget */
 .review-form .star-rating {
     display: flex;

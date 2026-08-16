@@ -171,12 +171,22 @@
         <section id="contact" class="contact-section">
             <div class="contact-form">
                 <h1>Contact <span>Me</span></h1>
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
+                <form action="https://formsubmit.co/rh63800@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Pesan Baru dari Portofolio!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div class="contact-wa">
+                    <a class="wa-button" href="https://wa.me/6289524388814" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                    </a>
+                </div>
             </div>
         </section>
         <!-- end contact section -->
