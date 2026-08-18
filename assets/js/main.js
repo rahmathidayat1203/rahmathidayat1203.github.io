@@ -2,11 +2,20 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
 menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+    const isOpen = nav.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+});
+
+// Close mobile menu after choosing a link
+nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    });
 });
 
 const typingText = document.getElementById('typing-text');
-const phrases = ['Web Developer', 'Android Developer', 'IOT Developer'];
+const phrases = ['Web Developer', 'Android Developer', 'IOT Developer', 'Mentor'];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

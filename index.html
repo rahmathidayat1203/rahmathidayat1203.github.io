@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahmat Hidayat - Web Designer</title>
+    <title>Rahmat Hidayat - Android & Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="container">
         <!-- header -->
         <header>
             <div class="logo">Rahmat <span>Hidayat</span></div>
-            <div class="menu-toggle">☰</div>
-            <nav>
+            <button type="button" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <nav id="primary-nav">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#education">Education</a></li>
@@ -30,23 +31,23 @@
         <!-- end header -->
 
         <!-- main content -->
-        <main class="main-content">
+        <main class="main-content" id="main-content">
             <div class="image-content">
-                <img src="/assets/images/profile_new.jpg" alt="Rahmat Hidayat profile picture">
+                <img src="/assets/images/profile_new.jpg" alt="Rahmat Hidayat profile picture" width="220" height="220">
             </div>
             <div class="text-content">
                 <h1>Hi, It's <span style="color: #00ffcc;">Rahmat</span></h1>
                 <h2>I'm a <span id="typing-text"></span></h2>
-                <p>I am a passionate and versatile Fullstack Android Developer, Web Developer, and IoT Developer with a deep enthusiasm for cutting-edge technology </p>
+                <p>An Android, Web, and IoT developer who enjoys designing and building digital solutions. I also mentor and teach, which keeps me sharp at explaining technical concepts clearly.</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/rahmat-hidayat-69561a16b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://github.com/rahmathidayat1203" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/rahmat_h_312/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
                 <div class="buttons">
-                    <a href="#">Hire</a>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Hire</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
         </main>
@@ -58,26 +59,16 @@
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="content">
-                        <span class="date">2021</span>
-                        <h3>High School</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <span class="date">2012 – 2015</span>
+                        <h3>Junior High School</h3>
+                        <p>SMP Negeri 1 Martapura. Active member of the student council (OSIS).</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="content">
-                        <span class="date">2022</span>
-                        <h3>University</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="content">
-                        <span class="date">2023</span>
-                        <h3>Internship</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <span class="date">2015 – 2018</span>
+                        <h3>Senior High School</h3>
+                        <p>SMA Negeri 2 Martapura, Science (IPA) track. Active in OSIS, Rohis, and the basketball team.</p>
                     </div>
                 </div>
             </div>
@@ -89,16 +80,20 @@
             <h2>Services</h2>
             <div class="services-container">
                 <div class="service-card">
-                    <h3>UI Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus delectus magnam
-                        sapiente alias voluptatum porro ab aperio, culpa laborum, doloremque adipisci recusanda soluta
-                        labore velit quod quis. Ut, eveniet!</p>
+                    <h3>Android Development</h3>
+                    <p>Building native and cross-platform Android apps with Kotlin and Flutter/Dart, from UI to backend integration.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Frontend Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, tempora sed? Recusandae itaque,
-                        quia quos excepturi blanditiis quaerat voluptatum quam? Maiores aut incidunt omnis, delectus
-                        autem vel labore molestias consequatur.</p>
+                    <h3>Web Development</h3>
+                    <p>Developing web applications with Laravel and MVC architecture, including role-based access control, custom services, and deployment.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Backend Development</h3>
+                    <p>Designing backend services and APIs with Go and PostgreSQL, following clean architecture principles.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mentoring & Training</h3>
+                    <p>3+ years mentoring and training aspiring developers at Cyborg IT Center, covering Android/Web development and Machine Learning, turning technical concepts into clear, practical lessons.</p>
                 </div>
                 <!-- Add more service cards as needed -->
             </div>
@@ -107,85 +102,94 @@
         <!-- testimonials section -->
         <section id="testimonials" class="testimonials">
             <h2>Testimonials</h2>
-            <div class="testimonials-container">
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="/assets/images/girl1.jpg" alt="Thomas">
-                    </div>
-                    <div class="testimonial-name">Jessica</div>
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                        autem voluptatum quia, dolor sitis amets perferendis cum bona dosis excepeturis magna! Excepturi
-                        a vengiatis corporis perspiciatis inglorious maxed atuem.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="assets/images/man1.jpg" alt="Thomas">
-                    </div>
-                    <div class="testimonial-name">Thomas</div>
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-                        autem voluptatum quia, dolor sitis amets perferendis cum bona dosis excepeturis magna! Excepturi
-                        a vengiatis corporis perspiciatis inglorious maxed atuem.</p>
-                </div>
-                <!-- Add more testimonial cards as needed -->
+            <div id="testimonials-list" class="testimonials-container">
+                <p>Memuat testimonial...</p>
             </div>
         </section>
         <!--end testimonials section -->
 
-        <!-- reviews section (client-submitted, backed by Supabase) -->
+        <!-- reviews section (submit a review, backed by Supabase; shown on the site via Testimonials) -->
         <section id="reviews" class="reviews">
-            <h2>Reviews</h2>
-            <div id="reviews-list" class="reviews-list">
-                <p>Memuat review...</p>
-            </div>
+            <h2>Leave a Review</h2>
+            <p class="reviews-intro">Share your experience working with me — the best reviews are featured in Testimonials above.</p>
             <form id="review-form" class="review-form">
+                <label class="visually-hidden" for="review-name">Your name</label>
                 <input type="text" id="review-name" placeholder="Your Name" required>
-                <div class="star-rating" id="review-star-rating">
-                                    <i class="far fa-star" data-value="1"></i>
-                                    <i class="far fa-star" data-value="2"></i>
-                                    <i class="far fa-star" data-value="3"></i>
-                                    <i class="far fa-star" data-value="4"></i>
-                                    <i class="far fa-star" data-value="5"></i>
-                                </div>
-                                <input type="hidden" id="review-rating" value="" required />
+                <fieldset class="star-rating" id="review-star-rating">
+                    <legend class="visually-hidden">Your rating</legend>
+                    <button type="button" data-value="1" aria-label="Rate 1 star" aria-pressed="false"><i class="far fa-star" aria-hidden="true"></i></button>
+                    <button type="button" data-value="2" aria-label="Rate 2 stars" aria-pressed="false"><i class="far fa-star" aria-hidden="true"></i></button>
+                    <button type="button" data-value="3" aria-label="Rate 3 stars" aria-pressed="false"><i class="far fa-star" aria-hidden="true"></i></button>
+                    <button type="button" data-value="4" aria-label="Rate 4 stars" aria-pressed="false"><i class="far fa-star" aria-hidden="true"></i></button>
+                    <button type="button" data-value="5" aria-label="Rate 5 stars" aria-pressed="false"><i class="far fa-star" aria-hidden="true"></i></button>
+                </fieldset>
+                <input type="hidden" id="review-rating" value="" required />
+                <label class="visually-hidden" for="review-comment">Your comment</label>
                 <textarea id="review-comment" placeholder="Your comment" rows="4" required></textarea>
+                <label class="review-photo-label" for="review-image">Add a photo (optional)</label>
+                <input type="file" id="review-image" accept="image/png,image/jpeg,image/webp">
+                <img id="review-image-preview" class="review-photo-preview" alt="" hidden>
                 <button type="submit">Submit Review</button>
+                <p id="review-form-status" class="form-status" role="status" aria-live="polite"></p>
             </form>
         </section>
         <!-- end reviews section -->
 
         <!-- contact section -->
         <section id="contact" class="contact-section">
-            <div class="contact-form">
-                <h1>Contact <span>Me</span></h1>
-                <form action="https://formsubmit.co/rh63800@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="Pesan Baru dari Portofolio!">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="phone" placeholder="Phone Number">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-                <div class="contact-wa">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contact <span>Me</span></h2>
+                    <p>Have a project in mind, need a developer, or looking for a mentor? Send a message and I'll get back to you.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:rh63800@gmail.com">rh63800@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <a href="https://wa.me/6289524388814" target="_blank" rel="noopener">+62 895-2438-8814</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-location-dot" aria-hidden="true"></i>
+                            <span>Palembang, South Sumatra, Indonesia</span>
+                        </li>
+                    </ul>
                     <a class="wa-button" href="https://wa.me/6289524388814" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
                     </a>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form action="https://formsubmit.co/rh63800@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Pesan Baru dari Portofolio!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-row">
+                            <div>
+                                <label class="visually-hidden" for="contact-name">Full name</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div>
+                                <label class="visually-hidden" for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div>
+                                <label class="visually-hidden" for="contact-phone">Phone number</label>
+                                <input type="text" id="contact-phone" name="phone" placeholder="Phone Number" autocomplete="tel">
+                            </div>
+                            <div>
+                                <label class="visually-hidden" for="contact-subject">Subject</label>
+                                <input type="text" id="contact-subject" name="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <label class="visually-hidden" for="contact-message">Your message</label>
+                        <textarea id="contact-message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -193,10 +197,9 @@
         <!-- footer -->
         <footer class="footer">
             <div class="social-icons">
-                <a href="#" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="icon facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/rahmat-hidayat-69561a16b/" target="_blank" rel="noopener" class="icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/rahmathidayat1203" target="_blank" rel="noopener" class="icon github" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/rahmat_h_312/" target="_blank" rel="noopener" class="icon instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
             </div>
 
             <nav class="nav-links">
